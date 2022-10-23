@@ -1,0 +1,25 @@
+''' Type your code here. '''
+inp = input()
+#from decimal import Decimal as D
+inp = int(inp)
+lista = [inp]
+listb = []
+i = 0
+j = 0
+k = 0
+maxi = 0
+for i in range(inp):
+    k = input()
+    lista.append(k)
+#print(lista)
+for j in lista:
+    j = float(j)
+    if maxi <= j:
+        maxi = j
+for j in lista:
+    j = float(j)
+    if j != lista[0]:
+        #print(j, maxi)
+        j = j / maxi
+        #print(j, maxi)
+        print(f'{j:.2f}')
